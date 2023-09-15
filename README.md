@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+リポジトリを作成し、以下のプロジェクトをローカル環境にクローンする
+https://github.com/ihatov08/rails7_docker_template
+```
+git clone https://github.com/ihatov08/rails7_docker_template
+```
 
-* Ruby version
+Dockerfileにimageを作成するためのコードを記述する
 
-* System dependencies
+Gemfileに使用するパッケージ情報を記述する
 
-* Configuration
+Gemfile.lockを作成する
 
-* Database creation
+docker-compose.ymlファイルを作成する
+    - コンテナはwebとdbの2つを用意する
+    - Docker-compose up -dコマンドだけでプロジェクトをDocker化できるように、buildやcommand、ports等を指定する
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+docker-compose up -dコマンドで、dockerをコンテナ化する
+localhost:3000で、Railsプロジェクトが動作しているか確認する
